@@ -40,20 +40,15 @@ function showNote () {
         // create tag what we must past in page
         let tagLi = `<li class="note">
         <div class="details">  
-            // add title 
             <p>${note.noteTitle}</p>
-            // add description
             <span>${note.noteDesc}</span>
         </div>
         <div class="bottom-content">
-            // add date
             <span>${note.date}</span>
             <div class="settings">
                 <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
                 <ul class="menu">
-                    // add furn when click for update
                     <li onclick="updateNote(${index}, '${note.noteTitle}', '${note.noteDesc}')"><i class="uil uil-pen"></i>Edit</li>
-                    // add furn when click for delete
                     <li onclick="deleteNote(${index})"><i class="uil uil-trash"></i>Delete</li>
                 </ul>
             </div>
